@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Socials } from "../constants";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -23,8 +24,8 @@ const Navbar = () => {
         </a>
         <div className="w-[500px] hh-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861} bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
+            <a href="#About-me" className="cursor-pointer">
+              About
             </a>
             <a href="#Skills" className="cursor-pointer">
               Skills
@@ -35,15 +36,21 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
+          {Socials.map((social) =>
+            // Verifica que social.link existe y es una cadena antes de renderizar el enlace
+            social.link ? (
+              <Link href={social.link} key={social.name} passHref>
+                <div>
+                  <Image
+                    src={social.src}
+                    alt={social.name}
+                    width={24}
+                    height={24}
+                  />
+                </div>
+              </Link>
+            ) : null
+          )}
         </div>
       </div>
     </div>

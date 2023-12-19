@@ -34,7 +34,10 @@ const HeroContent = () => {
         >
           <span>
             Providing
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> the bests </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              {" "}
+              the bests{" "}
+            </span>
             Solutions
           </span>
         </motion.div>
@@ -43,13 +46,18 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          +4 Years experience as a full stack software developer. Focused in precise requirements gathering, detailed analysis, efficient design, development and deployment to ensure effective software solutions.
+          +4 Years experience as a full stack software developer. Focused in
+          precise requirements gathering, detailed analysis, efficient design,
+          development and deployment to ensure effective software solutions.
         </motion.p>
         <motion.a
-          variants={slideInFromLeft(1)}
+          href="mailto:nicolasgarciabrogna@gmail.com"
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          whileHover={{ scale: 1.05 }}
         >
-          CONTACT!
+          <motion.div variants={slideInFromLeft(1)}>
+            <span className="text-[18px]">CONTACT</span>
+          </motion.div>
         </motion.a>
       </div>
       <motion.div

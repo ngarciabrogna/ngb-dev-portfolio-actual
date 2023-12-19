@@ -86,18 +86,18 @@ export const Socials = [
   {
     name: "X (twitter)",
     src: "/x.png",
-	link:"https://www.google.com"
+	link:"https://twitter.com/ngbdev"
 
   },
   {
     name: "Facebook",
     src: "/facebook.svg",
-	link:"https://www.google.com"
+	link:"https://www.facebook.com/ngbdev/"
   },
   {
     name: "Discord",
     src: "/discord.svg",
-	link:"https://www.google.com"
+	link:"https://discord.com/users/garcianicolas"
   },
 ];
 

@@ -83,6 +83,11 @@ export const Skill_data_2 = [
 ];
 
 export const Socials = [
+	{
+		name: "Curriculum Vitae",
+		src: "/vitae.svg",
+		link:"https://nagb.tech/certifications/Nicolas_Garcia_Brogna-Curriculum_Vitae.pdf"
+	  },
   {
     name: "X (twitter)",
     src: "/x.png",
@@ -99,6 +104,7 @@ export const Socials = [
     src: "/discord.svg",
 	link:"https://discord.com/users/garcianicolas"
   },
+
 ];
 
 export const Backend_skill_1 = [

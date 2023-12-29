@@ -11,15 +11,17 @@ const Navbar = () => {
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
         >
-          <Image
+          {/*         <Image
             src="/NavLogo.png"
             alt="Logo ngv dev"
             width={70}
             height={70}
             className="cursor-pointer hover:animate-slowpin"
-          />
-          <span className="font=bold ml=[10px] hidden md:block text-gray-300">
-            NGBDev
+          /> */}
+
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-bold mr-2">
+            {" "}
+            NGBDEV{" "}
           </span>
         </a>
         <div className="w-[500px] hh-full flex flex-row items-center justify-between md:mr-20">
@@ -39,13 +41,18 @@ const Navbar = () => {
           {Socials.map((social) =>
             // Verifica que social.link existe y es una cadena antes de renderizar el enlace
             social.link ? (
-              <Link href={social.link} key={social.name} passHref>
+              <Link
+                href={social.link}
+                key={social.name}
+                passHref
+                target="_blank"
+              >
                 <div>
                   <Image
                     src={social.src}
                     alt={social.name}
-                    width={24}
-                    height={24}
+                    width={34}
+                    height={34}
                   />
                 </div>
               </Link>

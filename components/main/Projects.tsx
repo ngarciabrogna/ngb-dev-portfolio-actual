@@ -31,7 +31,7 @@ const Projects = () => {
           rel="noopener noreferrer"
         >
           <ProjectCard
-            src="/Siquiman_gap.png"
+            src="/siquimangap.png"
             title="SiquimanGAP"
             description="
 		  SiquimanGAP is a custom software in charge of managing the correct flow of people in the activities of the SIQUIMAN park. Developed with PHP on Codeigniter 

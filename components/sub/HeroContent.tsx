@@ -46,7 +46,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          +4 Years experience as a full stack software developer. Focused in
+          Full stack software developer. Focused in
           precise requirements gathering, detailed analysis, efficient design,
           development and deployment to ensure effective software solutions.
         </motion.p>

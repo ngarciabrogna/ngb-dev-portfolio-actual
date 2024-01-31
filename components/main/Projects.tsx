@@ -26,7 +26,7 @@ const Projects = () => {
         </a>
 
         <a
-          href="https://devityproject.com/siguimangap/"
+          href="https://devitystudio.tech/siquimangap"
           target="_blank"
           rel="noopener noreferrer"
         >
